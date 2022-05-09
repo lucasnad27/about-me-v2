@@ -1,33 +1,24 @@
-# create-svelte
+# about-me-v2
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Portfolio website including resume, work showcases, and blog posts. Using a combination of svelte-kit and tailwindcss. I'm no designer, but I loved the look of [Brian Lovin's portfolio site](https://brianlovin.com), so I'm using it as inspiration while building out my html/css.
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm init svelte
-
-# create a new project in my-app
-npm init svelte my-app
-```
+![](website-inspiration.png)
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
 ```bash
-npm run dev
+# install dependencies if you haven't already
+npm install
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+# run the application
+npm run dev
 ```
+
+If you are using VSCode, it's recommended to setup your own tasks.json file to trigger these commands
 
 ## Building
 
-To create a production version of your app:
+To create a production version of the app:
 
 ```bash
 npm run build
@@ -35,4 +26,6 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Deploying
+
+TBD; likely to include the [cloudflare adapter](https://kit.svelte.dev/docs/adapters)
