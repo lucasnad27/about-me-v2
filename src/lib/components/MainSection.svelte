@@ -1,5 +1,5 @@
 <script>
-	export let heading;
+	export let heading = undefined;
 </script>
 
 <div class="grid grid-cols-1 items-start gap-6 md:grid-cols-12">

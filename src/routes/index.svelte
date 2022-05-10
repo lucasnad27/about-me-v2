@@ -3,6 +3,7 @@
 	import IntroductionSection from '$lib/sections/IntroductionSection.svelte';
 	import ListSection from '$lib/sections/ListSection.svelte';
 	import MainSection from '$lib/components/MainSection.svelte';
+	import FloatingNavBar from '$lib/navBar/FloatingNavBar.svelte';
 
 	let onlineItems = [
 		{
@@ -51,45 +52,7 @@
 </script>
 
 <div class="relative flex max-h-screen w-full flex-col overflow-y-auto bg-white dark:bg-black">
-	<!-- Sticky top border goes here -->
-	<!-- TODO: Update `style` attribute with svelte transforms -->
-	<div
-		class="filter-blur sticky top-0 z-10 flex flex-col justify-center px-3 py-2 dark:border-b dark:border-gray-900"
-		style="background: rgba(255, 255, 255, 0); box-shadow: rgba(0, 0, 0, 0) 0px 1px 3px; min-height: 48px;"
-	>
-		<div class="flex flex-none items-center justify-between">
-			<span class="flex items-center space-x-3">
-				<span
-					class="flex cursor-pointer items-center justify-center rounded-md p-2 hover:bg-gray-200 dark:hover:bg-gray-800 lg:hidden"
-				>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="16"
-						height="16"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						class="text-primary"
-						><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="6" x2="21" y2="6" /><line
-							x1="3"
-							y1="18"
-							x2="21"
-							y2="18"
-						/></svg
-					>
-				</span>
-				<h2
-					class="translate-y-full transform text-sm font-bold text-slate-400 opacity-0 line-clamp-1"
-				>
-					Home
-				</h2>
-			</span>
-		</div>
-	</div>
-	<!-- End of Sticky top border goes here -->
+	<FloatingNavBar />
 	<!-- I'd like to find a better way of applying some space here -->
 	<div class="p-4" />
 	<div class="mx-auto w-full max-w-3xl px-4 pt-12 pb-10 md:px-8">
